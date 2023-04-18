@@ -1,0 +1,30 @@
+
+.nav {
+    padding: 2.25rem 3.875rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_img {
+    height: 2.375rem;
+}
+
+.nav_ul {
+    list-style: none;
+}
+
+ul > li {
+    display: inline-block;
+    color: #7E1E59;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    &:not(:last-child) {
+        margin-right: 3.75rem;
+    }
+}
+
+
+
+

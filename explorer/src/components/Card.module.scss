@@ -1,0 +1,32 @@
+
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article_image {
+    max-height: 100%;
+}
+
+.article_title {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin: 1.6rem 0 1rem;
+}
+
+.article_city {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.article_description {
+    font-size: 1.125rem;
+    margin: 2rem 0 1.125rem;
+    letter-spacing: .6px;
+    line-height: 1.5rem;
+}
+
+.button {
+    // To use the space available as margin so that the button is rendered in bottom of the card
+    margin-top: auto;
+}

@@ -1,0 +1,46 @@
+.header_container {
+    height: 46.625rem;
+    display: flex;
+}
+
+.text_container {
+    flex: 0 0 42%;
+    padding: 10.75rem 5.625rem 0 2rem;
+}
+
+.text_container > h3 {
+    font-size: 1.5rem;
+    padding-bottom: 2.375rem;
+}
+
+.image_container {
+    flex: 0 0 58%;
+    background: url('../../../public/images/explorer.webp') no-repeat left center;
+    background-size: cover;
+}
+
+.image {
+    max-height: 100%;
+}
+
+.description {
+    font-size: 4.325rem;
+    font-weight: 300;
+    padding-bottom: 5.625rem;
+}
+
+.description > span {
+    font-weight: 700;
+}
+
+.dropdown {
+    margin-bottom: 1.375rem;
+    width: 140%;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+
+.explore {
+    padding: 1rem 2.5rem;
+}

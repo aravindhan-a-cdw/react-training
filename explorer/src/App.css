@@ -1,0 +1,38 @@
+/* 
+  Style reset
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 
+  Colors
+  Primary Text: #7A1655
+  Primary Text Light: #A25D88
+*/
+
+.primary-text {
+  color: #7A1655;
+}
+
+.primary-text-light {
+  color: #A25D88;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
