@@ -1,4 +1,5 @@
 import style from './Dropdown.module.scss';
+import { DROPDOWN_CONSTANTS } from '../../constants/components';
 
 
 const Dropdown = (
@@ -30,7 +31,7 @@ const Dropdown = (
             id={id_name}
             name={id_name}
         >
-            <option value="" disabled hidden>Choose</option>
+            <option value="" disabled hidden>{DROPDOWN_CONSTANTS.DEFAULT_OPTION}</option>
             {optionElements}
         </select>
     );

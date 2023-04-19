@@ -1,5 +1,6 @@
-import Button from './Button';
+import Button from '../Button';
 import styles from './Card.module.scss';
+import { CARD_CONSTANTS } from '../../constants/components';
 
 /*
  * Card component to show the image, city, title and description in an article tag
@@ -13,7 +14,7 @@ const Card = ({ image, title, city, description }) => {
             <span className={styles.article_title}>{title}</span>
             <span className={styles.article_city}>{city}</span>
             <p className={styles.article_description}>{description}</p>
-            <Button className={styles.button} text="Read More" />
+            <Button className={styles.button} text={CARD_CONSTANTS.BUTTON_READ_MORE} />
         </article>
     );
 }

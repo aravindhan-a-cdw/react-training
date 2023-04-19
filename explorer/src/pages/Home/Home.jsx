@@ -1,7 +1,7 @@
-import Nav from '../../components/Nav';
+import Nav from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Header from './Header';
-import Destinations from './Destinations';
+import Header from './Containers/Header';
+import Destinations from './Containers/Destinations';
 import styles from './Home.module.css';
 
 const Home = () => {

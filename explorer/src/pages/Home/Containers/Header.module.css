@@ -15,7 +15,7 @@
 
 .image_container {
     flex: 0 0 58%;
-    background: url('../../../public/images/explorer.webp') no-repeat left center;
+    background: url('../../../../public/images/explorer.webp') no-repeat left center;
     background-size: cover;
 }
 
