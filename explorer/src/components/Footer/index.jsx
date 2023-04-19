@@ -2,22 +2,20 @@ import Button from '../Button';
 import Dropdown from '../Dropdown';
 import styles from './Footer.module.css';
 import { useEffect, useState } from 'react';
-import {fetchData} from '../../services/dataService';
 import FOOTER_CONSTANTS from '../../constants/footer';
+
+import data from '../../assets/data/places.json';
 
 
 const Footer = ({className}) => {
     // States
-    const [cities, setCities] = useState([]);
+    const cities = data.map(details => details.city);
+    
     const [homeTown, setHomeTown] = useState('');
     const [destination, setDestination] = useState('');
     const [destinationCities, setDestinationCities] = useState(cities);
 
-    // Set state by getting data from api
-    useEffect(() => {        
-        fetchData('').then(data => setCities(data.map(details => details.city)));
-    }, []);
-
+    // Process state data
     useEffect(() => {
         setDestinationCities(cities?.filter((value) => value !== homeTown));
         // eslint-disable-next-line

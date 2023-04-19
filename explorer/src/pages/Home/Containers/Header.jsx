@@ -1,19 +1,15 @@
 import Button from '../../../components/Button';
 import Dropdown from '../../../components/Dropdown';
 import styles from './Header.module.css';
-import { fetchData } from '../../../services/dataService';
-import { useEffect, useState } from 'react';
 import HOME_CONSTANTS from '../../../constants/home';
+
+import data from '../../../assets/data/places.json';
 
 
 const Header = ({className}) => {
-    // States
-    const [cities, setCities] = useState([]);
-
-    // Set state by getting data from api
-    useEffect(() => {        
-        fetchData('').then(data => setCities(data.map(details => details.city)));
-    }, []);
+    
+    // Data
+    const cities = data.map(details => details.city);
 
     console.log("Rendering Header");
     // Return the element to render
