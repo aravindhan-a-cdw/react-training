@@ -1,0 +1,22 @@
+header {
+    div:first-child {
+        background-color: #42133e;
+        color: white;
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    div:last-child {
+        height: 100vh;
+        background: url("../public/images/cover.png") no-repeat;
+        background-size: 100% 100%;
+    }
+
+    h1 {
+        font-size: 46px;
+    }
+
+    img {
+        height: 100%;
+    }
+}
